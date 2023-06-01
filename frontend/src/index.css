@@ -1,0 +1,312 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+
+
+/* HOME */
+.product-desc,
+.product-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+}
+.product-wrapper {
+
+  border-bottom: 1px solid rgb(104, 103, 103);
+
+}
+
+.product-desc {
+  margin: 10px;
+  display: flex;
+  text-decoration: none;
+  max-width: 980px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+.item-column {
+  margin: 0px 90px 0px 10px;
+}
+.item-column h3{
+ margin-bottom: .5rem;
+ text-align: center;
+ font-family: 'EB Garamond', serif;
+}
+
+.product-desc .item-column {
+  margin: 0px 90px 0px 10px;
+  color: #000;
+}
+
+.button-rows {
+  margin: 20px;
+  position: absolute;
+  right:0px;
+}
+
+
+.btn-remove {
+  margin-left: 30px;
+  padding: .6rem;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-family: 'Mulish', sans-serif;
+  font-size: .8rem;
+}
+
+.btn-remove:hover {
+  background-color: #dd304c;
+}
+
+.edit-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(2, 144, 97);
+  padding: .5rem;
+  border-radius: .5rem;
+  font-family: 'Mulish', sans-serif;
+  font-size: .8rem;
+}
+
+.edit-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(2, 155, 104);
+  padding: .5rem;
+}
+
+/* -------Navbar------------- */
+
+.Navbar {
+  background-color: #fff;
+  padding-block: 1rem;
+  font-size: .8em;
+}
+
+.Navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.Navbar .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Navbar .nav-link {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.Navbar .nav-link:hover {
+  color: #e0183a;
+}
+
+
+.Navbar .nav-link-grey {
+  color: #b4b4b4;
+  text-transform: capitalize;
+}
+
+
+/* DETAIL */
+
+.product-details-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 90vh;
+  flex-direction: row;
+  margin-top: 120px;
+
+}
+
+
+
+.text-card{
+margin-left: 30px;
+max-width: 400px;
+}
+
+.text-card p{
+margin: 20px 0px 20px 0px;
+font-size: 1.3rem;
+}
+.text-card h2 {
+margin-bottom: .5rem;
+}
+
+.details-update{
+display: flex;
+justify-content:flex-end;
+margin-top: 3rem;
+}
+
+/* FORM */
+
+.btn {
+  border: 0;
+  padding: .5em 1.4em;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #e0183a;
+  color: #fff;
+  margin-top: 10px;
+}
+
+
+.form-page {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.form-page>* {
+  flex: 1;
+}
+
+
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label,
+.form-group input {
+  display: block;
+  width: 70%;
+}
+
+.form-group label {
+  margin-bottom: .4rem;
+}
+
+.form-group input {
+  padding: .4em;
+  border: 1px solid #a6a6a6;
+  font-size: 1rem;
+  border-radius: .5em;
+}
+
+.form-group input:focus {
+  outline-color: var(--clr-primary);
+}
+
+.blog-wrapper {
+  border: 1px solid black;
+  margin: 40px;
+}
+
+.error {
+  color: #e0183a;
+}
+
+
+.nav-link-gray {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-link-gray:hover {
+  color: #e0183a;
+  text-decoration: underline;
+}
+
+.form-text-img{
+display: flex;
+flex-direction:column;
+text-align: center;
+align-items: center;
+}
+.form-text-img h1{
+margin-bottom: 20px;
+}
+
+form.add-form{
+  margin-bottom: 20px;
+
+}
+
+.login-h1{
+  text-align: center;
+}
+
+
+/* ORDERS */
+
+.orderDetails{
+  display: flex;
+  justify-content: center;
+}
+
+.orderRowImg{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.row-wrapper{
+  display: inline-block;
+  width: 160px;
+}
+
+.order-wrapper{
+  border: 1px solid grey;
+  padding: 1rem;
+  margin-top: 1rem;
+  /* display: flex; */
+}
+
+.ordernumber{
+  margin-top: .5rem;
+  margin-bottom: .3rem;
+  display: block;
+}
+
+.curOrders{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.prevOrders{
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+
+
+/* ORDERS DETAILS */
+
+.details-row-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-top: 120px;
+}
+
