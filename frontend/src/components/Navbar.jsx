@@ -4,7 +4,6 @@ import { Link, NavLink } from 'react-router-dom'
 const Nav = ({ user, setUser }) => {
 
 
-  // const [isLoggedIn, setIsLoggedIn] = useState(true)
 
   return (
     <div className='Navbar'>

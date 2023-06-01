@@ -273,6 +273,9 @@ form.add-form{
   display: inline-block;
   width: 160px;
 }
+.row-wrapper b,p{
+ color: #000;
+}
 
 .order-wrapper{
   border: 1px solid grey;

@@ -35,11 +35,11 @@ const OrderList = ({ user }) => {
                   {row.product && (
                     <>
                       <Link to={`/orders/${order._id}`}>
-                        <img src={row.product.imageURL} alt={row.product.name} className='orderRowImg' width={430} height={360} />
-                      </Link>
+                      <img src={row.product.imageURL} alt={row.product.name} className='orderRowImg' width={430} height={360} />
                       <p><b>Product:</b> {row.product.name}</p>
                       <p><b>Quantity:</b> {row.quantity}</p>
                       <p><b>Status:</b> {order.orderStatus}</p>
+                      </Link>
                     </>
                   )}
                 </div>
@@ -54,52 +54,6 @@ const OrderList = ({ user }) => {
   );
 };
 
-
-
-//   return (
-//     <div>
-//       <div className='prevOrders'>
-//         <h1>All orders</h1>
-//         {orders &&
-//           orders.map((order) => (
-//             <div key={order._id} className='order-wrapper'>
-//               <p className='ordernumber'>
-//                 <b>Ordernumber:</b> {order._id}
-//               </p>
-//               {order.orderRow.map((row) => (
-//                 <div key={row._id} className='row-wrapper'>
-//                   {row.product && (
-//                     <>
-//                       <Link to={`/orders/${order._id}`}>
-//                         <img
-//                           src={row.product.imageURL}
-//                           alt={row.product.name}
-//                           className='orderRowImg'
-//                           width={430}
-//                           height={360}
-//                         />
-//                       </Link>
-//                       <p>
-//                         <b>Product:</b> {row.product.name}
-//                       </p>
-//                     </>
-//                   )}
-//                   <p>
-//                     <b>Quantity:</b> {row.quantity}
-//                   </p>
-//                   <p>
-//                     <b>Status:</b> {order.orderStatus}
-//                   </p>
-
-
-//                 </div>
-//               ))}
-//             </div>
-//           ))}
-//       </div>
-//     </div>
-//   );
-// };
 
 export default OrderList;
 

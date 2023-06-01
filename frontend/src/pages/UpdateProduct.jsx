@@ -12,7 +12,7 @@ const UpdateProduct = ({ user, setProducts }) => {
 
   const { id } = useParams();
 
-  const [productData, setProductData] = useState({ //instasierar produktData som inehåller objekt med name price etc
+  const [productData, setProductData] = useState({ 
     name: '',
     price: '',
     imageURL: '',
@@ -20,12 +20,12 @@ const UpdateProduct = ({ user, setProducts }) => {
     tags: '',
   });
 
-  useEffect(() => { // fetsh mot produkten som finns  ( hämtar alla produkter)
+  useEffect(() => { 
     const fetchProduct = async () => {
       try {
         const response = await fetch('http://localhost:9998/api/products/' + id);
         const existingProduct = await response.json();
-        setProductData(existingProduct); // lägger in data i productData
+        setProductData(existingProduct); 
       } catch (error) {
         console.error('Error:', error);
       }

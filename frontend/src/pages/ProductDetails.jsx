@@ -58,13 +58,7 @@ const ProductDetails = ({user}) => {
         </div>
         
         </div>
-
-        
-    
-       
-       
-       
-     </div>}
+    </div>}
    
     </>
   );
